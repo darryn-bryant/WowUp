@@ -1,0 +1,9 @@
+<div *ngIf="quitEnabled === false" class="app" [ngClass]="[wowUpService.currentTheme]">
+  <app-titlebar class="bg-primary"></app-titlebar>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+<app-animated-logo *ngIf="showPreLoad === true || quitEnabled === true"></app-animated-logo>
